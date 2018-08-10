@@ -25,6 +25,7 @@ import java.util.HashSet;
 public class InitializeAllPropertiesBeforeTest <T extends WebDriver> extends BaseClass{
 
     ArrayList<String> listSettings = null;
+
     public  InitializeAllPropertiesBeforeTest(T typeOfBrowser) throws Exception {
 
         listSettings = new ArrayList<>();
