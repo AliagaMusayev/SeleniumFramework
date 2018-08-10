@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="WebDriverFramework:jar">
+    <output-path>D:/Udemy</output-path>
+    <root id="archive" name="WebDriverFramework.jar">
+      <element id="module-output" name="WebDriverFramework" />
+      <element id="extracted-dir" path="D:/Udemy/selenium-server-standalone-3.13.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/Udemy/client-combined-3.13.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/Udemy/libs/byte-buddy-1.8.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/Udemy/libs/commons-codec-1.10.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/Udemy/libs/commons-exec-1.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/Udemy/libs/commons-logging-1.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/Udemy/libs/gson-2.8.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/Udemy/libs/guava-25.0-jre.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/Udemy/libs/httpclient-4.5.5.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/Udemy/libs/httpcore-4.4.9.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/Udemy/libs/okhttp-3.10.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/Udemy/libs/okio-1.14.1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

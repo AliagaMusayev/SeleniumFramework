@@ -12,3 +12,9 @@ public class BaseClass {
 //    }
 
 }
+
+enum BrowserTypes{
+    Chrome,
+    Firefox,
+    IExplorer
+}

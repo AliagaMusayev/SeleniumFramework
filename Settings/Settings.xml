@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+    <settings>
+    <Chrome>D:\\WebDriverFramework\\SeleniumFramework.git\\trunk\\ExternalExeFiles\\chromedriver.exe</Chrome>
+    <Firefox>D:\\WebDriverFramework\\SeleniumFramework.git\\trunk\\ExternalExeFiles\\geckodriver.exe</Firefox>
+        <IExplorer> </IExplorer>
+    </settings>
+</metadata>
