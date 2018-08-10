@@ -1,6 +1,7 @@
 package com.SeleniumByAli;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -44,6 +45,11 @@ public class BaseClass <T extends WebDriver> {
     protected void waitWhileElementClickable(By selector, int seconds){
         WebDriverWait wait = new WebDriverWait(_driver,seconds);
         wait.until(ExpectedConditions.elementToBeClickable(selector));
+    }
+
+    protected void waitWhileWebPageCompletelyReady(int pageLoadTimeout){
+        new WebDriverWait(_driver, pageLoadTimeout).until(
+                webDriver -> ((JavascriptExecutor) _driver).executeScript("return document.readyState").equals("complete"));
     }
 
     protected void selectValueFromDropdownByText(By selectionCriteria, String ByText){
