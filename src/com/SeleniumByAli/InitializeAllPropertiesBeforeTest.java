@@ -19,31 +19,61 @@ import javax.xml.transform.stream.StreamResult;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class InitializeAllPropertiesBeforeTest <T extends WebDriver> extends BaseClass{
 
-    ArrayList<String> listSettings = null;
+    //ArrayList<String> listSettings = null;
 
-    public  InitializeAllPropertiesBeforeTest(T typeOfBrowser) throws Exception {
+//    public  InitializeAllPropertiesBeforeTest(T typeOfBrowser) throws Exception {
+//
+//        super(typeOfBrowser);
+//
+//        listSettings = new ArrayList<>();
+//        checkIfSettingsFileExists();
+//
+//        listSettings = returnBrowserInstanceSettings();
+//
+//        if(typeOfBrowser instanceof FirefoxDriver){
+//            // path for gecko driver will be taken from settings.xml file
+//            System.setProperty("webdriver.gecko.driver", listSettings.get(1));
+//        }
+//
+//        else if (typeOfBrowser instanceof ChromeDriver){
+//            System.setProperty("webdriver.chrome.driver",listSettings.get(0));
+//        }
+//
+//        else if (typeOfBrowser instanceof InternetExplorerDriver){
+//            System.setProperty("webdriver.IE.driver",listSettings.get(2));
+//        }
+//
+//        else {
+//            throw new NoSuchTypeBrowserException("Please select true browser type and then Re-run tests");
+//        }
+//
+//
+//    }
+
+
+    /**
+     * @param typeOfBrowser this is instance of one BrowserType driver. Example: FirefoxDriver, ChromeDriver etc
+     * @param browserNameAndPathToBrowserSettings this parameter is HashMap<String, String> will be used for to define path to geckodriver or chromedriver or iexplorerdriver
+     */
+    public  InitializeAllPropertiesBeforeTest(T typeOfBrowser, HashMap<String, String> browserNameAndPathToBrowserSettings) throws Exception {
+
         super(typeOfBrowser);
-
-        listSettings = new ArrayList<>();
-        checkIfSettingsFileExists();
-
-        listSettings = returnBrowserInstanceSettings();
-           // boolean test = typeOfBrowser.equals(new FirefoxDriver());
 
         if(typeOfBrowser instanceof FirefoxDriver){
             // path for gecko driver will be taken from settings.xml file
-            System.setProperty("webdriver.gecko.driver", listSettings.get(1));
+            System.setProperty("webdriver.gecko.driver", browserNameAndPathToBrowserSettings.get("firefox"));
         }
 
         else if (typeOfBrowser instanceof ChromeDriver){
-            System.setProperty("webdriver.chrome.driver",listSettings.get(0));
+            System.setProperty("webdriver.chrome.driver",browserNameAndPathToBrowserSettings.get("chrome"));
         }
 
         else if (typeOfBrowser instanceof InternetExplorerDriver){
-            System.setProperty("webdriver.IE.driver",listSettings.get(2));
+            System.setProperty("webdriver.IE.driver",browserNameAndPathToBrowserSettings.get("iexplorer"));
         }
 
         else {

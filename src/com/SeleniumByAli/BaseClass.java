@@ -9,16 +9,14 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BaseClass <T extends WebDriver> {
 
-      protected T t;
-      protected WebDriver _driver;
+      protected static WebDriver _driver;
 
-       public BaseClass(T t){
-          this.t = t;
-           this._driver = this.t;
+       public BaseClass(T typeOfBrowser){
+           this._driver = typeOfBrowser;
        }
 
 
-    protected void Login(By elementForUsernameFiled, By elementForPasswordField, String username, String password, By elementForSubmitForm){
+    public void Login(By elementForUsernameFiled, By elementForPasswordField, String username, String password, By elementForSubmitForm){
         _driver.findElement(elementForUsernameFiled).clear();
         _driver.findElement(elementForUsernameFiled).sendKeys(username);
 
@@ -28,50 +26,54 @@ public class BaseClass <T extends WebDriver> {
         _driver.findElement(elementForSubmitForm).click();
     }
 
-    protected void FocusOn(String window){
+    public void gotoURL(String url){
+           _driver.get(url);
+    }
+
+    public void FocusOn(String window){
         _driver.switchTo().window(window);
     }
 
-    protected void FocusOn(String window, int frameIndex){
+    public void FocusOn(String window, int frameIndex){
         _driver.switchTo().window(window);
         _driver.switchTo().frame(frameIndex);
     }
 
-    protected void waitWhileElementVisible(By selector, int seconds){
+    public void waitWhileElementVisible(By selector, int seconds){
         WebDriverWait wait = new WebDriverWait(_driver,seconds);
         wait.until(ExpectedConditions.visibilityOf(_driver.findElement(selector)));
     }
 
-    protected void waitWhileElementClickable(By selector, int seconds){
+    public void waitWhileElementClickable(By selector, int seconds){
         WebDriverWait wait = new WebDriverWait(_driver,seconds);
         wait.until(ExpectedConditions.elementToBeClickable(selector));
     }
 
-    protected void waitWhileWebPageCompletelyReady(int pageLoadTimeout){
+    public void waitWhileWebPageCompletelyReady(int pageLoadTimeout){
         new WebDriverWait(_driver, pageLoadTimeout).until(
                 webDriver -> ((JavascriptExecutor) _driver).executeScript("return document.readyState").equals("complete"));
     }
 
-    protected void selectValueFromDropdownByText(By selectionCriteria, String ByText){
+    public void selectValueFromDropdownByText(By selectionCriteria, String ByText){
         Select select = new Select(_driver.findElement(selectionCriteria));
         select.selectByVisibleText(ByText);
     }
 
-    protected void selectValueFromDropdownByValue(By selectionCriteria, String ByValue){
+    public void selectValueFromDropdownByValue(By selectionCriteria, String ByValue){
         Select select = new Select(_driver.findElement(selectionCriteria));
         select.selectByValue(ByValue);
     }
 
-    protected void selectValueFromDropdownByIndex(By selectionCriteria, int index){
+    public void selectValueFromDropdownByIndex(By selectionCriteria, int index){
         Select select = new Select(_driver.findElement(selectionCriteria));
         select.selectByIndex(index);
     }
 
-    protected void clickButton(By selector){
+    public void clickButton(By selector){
            _driver.findElement(selector).click();
     }
 
-    protected void SendKeysInSelectedTextField(String text, By... selectors){
+    public void SendKeysInSelectedTextField(String text, By... selectors){
            if(selectors.length==1){
                _driver.findElement(selectors[0]).clear();
                _driver.findElement(selectors[0]).sendKeys(text);
@@ -85,11 +87,11 @@ public class BaseClass <T extends WebDriver> {
            }
     }
 
-    protected void ClickNeededChecbox(By selector, int indexOfCheckbox){
+    public void ClickNeededChecbox(By selector, int indexOfCheckbox){
            _driver.findElements(selector).get(indexOfCheckbox).click();
     }
 
-    protected void ClickNeededRadioButton(By selector, int indexOfCheckbox){
+    public void ClickNeededRadioButton(By selector, int indexOfCheckbox){
         _driver.findElements(selector).get(indexOfCheckbox).click();
     }
 }
