@@ -8,10 +8,10 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.annotations.Test;
 
 
 public class BaseClass <T extends WebDriver> implements LogInOut, IBaseClass{
+
 
     // NOTE: Either you can use Base Class methods, or you can implement IBaseClass and write method's body as you think
       protected static WebDriver _driver;
