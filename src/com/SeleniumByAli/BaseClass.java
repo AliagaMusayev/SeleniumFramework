@@ -7,9 +7,13 @@ import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
-public class BaseClass <T extends WebDriver> {
 
+public class BaseClass <T extends WebDriver> implements LogInOut, IBaseClass{
+
+    // NOTE: Either you can use Base Class methods, or you can implement IBaseClass and write method's body as you think
       protected static WebDriver _driver;
       EventFiringWebDriver driver = null;
       WebDriverListener listener = new WebDriverListener();
@@ -22,7 +26,7 @@ public class BaseClass <T extends WebDriver> {
 
 
 
-
+    @Override
     public void Login(By elementForUsernameFiled, By elementForPasswordField, String username, String password, By elementForSubmitForm){
         driver.findElement(elementForUsernameFiled).clear();
         driver.findElement(elementForUsernameFiled).sendKeys(username);
@@ -31,6 +35,11 @@ public class BaseClass <T extends WebDriver> {
         driver.findElement(elementForPasswordField).sendKeys(password);
 
         driver.findElement(elementForSubmitForm).click();
+    }
+
+    @Override
+    public void LogOut(By selector) {
+        driver.findElement(selector).click();
     }
 
     public void gotoURL(String url){
@@ -94,12 +103,33 @@ public class BaseClass <T extends WebDriver> {
            }
     }
 
-    public void ClickNeededChecbox(By selector, int indexOfCheckbox){
+    public void ClickNeededCheckbox(By selector, int indexOfCheckbox){
         driver.findElements(selector).get(indexOfCheckbox).click();
     }
 
     public void ClickNeededRadioButton(By selector, int indexOfCheckbox){
         driver.findElements(selector).get(indexOfCheckbox).click();
+    }
+
+    public void executeJavascript(String nameOfJavascriptMethod){
+        ((JavascriptExecutor)driver).executeScript(nameOfJavascriptMethod);
+    }
+
+    @Override
+    public <T> boolean AssertResult(T value1, T value2) {
+        if(value1 == value2)
+            return true;
+        else return false;
+    }
+
+    @Override
+    public <T> void AssertTrue(T value1, T value2) {
+        Assert.assertTrue(value1 == value2,"Error: "+value1 +" != "+value2+". But they must be equal");
+    }
+
+    @Override
+    public <T> void AssertFalse(T value1, T value2) {
+        Assert.assertFalse(value1 == value2, "Error: "+value1 +" = "+value2+". But they must be different");
     }
 }
 

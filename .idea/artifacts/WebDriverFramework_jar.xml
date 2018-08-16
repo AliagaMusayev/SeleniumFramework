@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="jar" build-on-make="true" name="WebDriverFramework:jar">
-    <output-path>D:/Udemy</output-path>
+    <output-path>$PROJECT_DIR$/JarFiles</output-path>
     <root id="archive" name="WebDriverFramework.jar">
       <element id="module-output" name="WebDriverFramework" />
       <element id="extracted-dir" path="D:/Udemy/selenium-server-standalone-3.13.0.jar" path-in-jar="/" />
