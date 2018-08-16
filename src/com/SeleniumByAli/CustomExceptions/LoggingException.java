@@ -8,6 +8,9 @@ public class LoggingException extends IOException {
         super();
     }
 
+    /**
+     * @param message
+     */
     public  LoggingException(String message){
         super(message);
     }

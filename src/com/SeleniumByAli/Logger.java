@@ -6,6 +6,11 @@ import java.io.*;
 
 public class Logger {
 
+    /**
+     * @param logMessage
+     * @param fullFilePathAndName
+     * @throws IOException
+     */
     public synchronized void WriteErrorLog(String logMessage, String fullFilePathAndName) throws IOException {
         try{
             File errorFile = new File(fullFilePathAndName);
@@ -28,7 +33,7 @@ public class Logger {
 
     }
 
-    public void WriteInfoLog(String logMessage) throws LoggingException {
+    public synchronized void WriteInfoLog(String logMessage) throws LoggingException {
 
         // TODO : write method logic
         throw new LoggingException("During creation of Info Log file there happened error");

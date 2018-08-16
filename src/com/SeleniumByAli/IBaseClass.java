@@ -1,6 +1,10 @@
 package com.SeleniumByAli;
 
+import com.SeleniumByAli.CustomExceptions.CookieUnavailableException;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Cookie;
+
+import java.util.Set;
 
 public interface IBaseClass extends LogInOut {
     void gotoURL(String url);
@@ -8,6 +12,8 @@ public interface IBaseClass extends LogInOut {
     void FocusOn(String window);
 
     void FocusOn(String window, int frameIndex);
+
+    void FocusOnlyFrame(String frame);
 
     void waitWhileElementVisible(By selector, int seconds);
 
@@ -36,4 +42,14 @@ public interface IBaseClass extends LogInOut {
     <T> void AssertTrue(T value1, T value2);
 
     <T> void AssertFalse(T value1, T value2);
+
+    void DeleteAllCookies();
+
+    void DeleteCookie(String cookie);
+
+    Set<Cookie> getAllCookies() throws CookieUnavailableException;
+
+    Cookie getCookie(String name);
+
+    void addCookie(Cookie name);
 }

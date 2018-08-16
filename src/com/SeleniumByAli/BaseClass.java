@@ -1,6 +1,8 @@
 package com.SeleniumByAli;
 
+import com.SeleniumByAli.CustomExceptions.CookieUnavailableException;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Cookie;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
@@ -8,6 +10,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+
+import java.util.HashSet;
+import java.util.Set;
 
 
 public class BaseClass <T extends WebDriver> implements LogInOut, IBaseClass{
@@ -53,6 +58,10 @@ public class BaseClass <T extends WebDriver> implements LogInOut, IBaseClass{
     public void FocusOn(String window, int frameIndex){
         driver.switchTo().window(window);
         driver.switchTo().frame(frameIndex);
+    }
+
+    public void FocusOnlyFrame(String frame){
+           driver.switchTo().frame(frame);
     }
 
     public void waitWhileElementVisible(By selector, int seconds){
@@ -131,6 +140,41 @@ public class BaseClass <T extends WebDriver> implements LogInOut, IBaseClass{
     @Override
     public <T> void AssertFalse(T value1, T value2) {
         Assert.assertFalse(value1 == value2, "Error: "+value1 +" = "+value2+". But they must be different");
+    }
+
+    @Override
+    public void DeleteAllCookies() {
+        driver.manage().deleteAllCookies();
+    }
+
+    @Override
+    public void DeleteCookie(String cookie) {
+           Cookie selectedCookie = driver.manage().getCookieNamed(cookie);
+           driver.manage().deleteCookie(selectedCookie);
+    }
+
+    @Override
+    public Set<Cookie> getAllCookies() throws CookieUnavailableException {
+           Set<Cookie> cookieList = null;
+           try{
+               cookieList = new HashSet<>();
+               cookieList = driver.manage().getCookies();
+           }
+           catch (Exception ex){
+               throw new CookieUnavailableException("Exception: For now it is impossible to get all cookies");
+           }
+        return cookieList;
+    }
+
+    @Override
+    public Cookie getCookie(String name) {
+        return driver.manage().getCookieNamed(name);
+    }
+
+    @Override
+    public void addCookie(Cookie name)
+    {
+        driver.manage().addCookie(name);
     }
 }
 
