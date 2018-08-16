@@ -47,57 +47,69 @@ public class BaseClass <T extends WebDriver> implements LogInOut, IBaseClass{
         driver.findElement(selector).click();
     }
 
+    @Override
     public void gotoURL(String url){
         driver.get(url);
     }
 
+    @Override
     public void FocusOn(String window){
         driver.switchTo().window(window);
     }
 
+    @Override
     public void FocusOn(String window, int frameIndex){
         driver.switchTo().window(window);
         driver.switchTo().frame(frameIndex);
     }
 
+    @Override
     public void FocusOnlyFrame(String frame){
            driver.switchTo().frame(frame);
     }
 
+    @Override
     public void waitWhileElementVisible(By selector, int seconds){
         WebDriverWait wait = new WebDriverWait(driver,seconds);
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(selector)));
     }
 
+    @Override
     public void waitWhileElementClickable(By selector, int seconds){
         WebDriverWait wait = new WebDriverWait(driver,seconds);
         wait.until(ExpectedConditions.elementToBeClickable(selector));
     }
 
+    @Override
     public void waitWhileWebPageCompletelyReady(int pageLoadTimeout){
         new WebDriverWait(driver, pageLoadTimeout).until(
                 webDriver -> ((JavascriptExecutor) driver).executeScript("return document.readyState").equals("complete"));
     }
 
+    @Override
     public void selectValueFromDropdownByText(By selectionCriteria, String ByText){
         Select select = new Select(driver.findElement(selectionCriteria));
         select.selectByVisibleText(ByText);
     }
 
+    @Override
     public void selectValueFromDropdownByValue(By selectionCriteria, String ByValue){
         Select select = new Select(driver.findElement(selectionCriteria));
         select.selectByValue(ByValue);
     }
 
+    @Override
     public void selectValueFromDropdownByIndex(By selectionCriteria, int index){
         Select select = new Select(driver.findElement(selectionCriteria));
         select.selectByIndex(index);
     }
 
+    @Override
     public void clickButton(By selector){
         driver.findElement(selector).click();
     }
 
+    @Override
     public void SendKeysInSelectedTextField(String text, By... selectors){
            if(selectors.length==1){
                driver.findElement(selectors[0]).clear();
@@ -112,14 +124,17 @@ public class BaseClass <T extends WebDriver> implements LogInOut, IBaseClass{
            }
     }
 
+    @Override
     public void ClickNeededCheckbox(By selector, int indexOfCheckbox){
         driver.findElements(selector).get(indexOfCheckbox).click();
     }
 
+    @Override
     public void ClickNeededRadioButton(By selector, int indexOfCheckbox){
         driver.findElements(selector).get(indexOfCheckbox).click();
     }
 
+    @Override
     public void executeJavascript(String nameOfJavascriptMethod){
         ((JavascriptExecutor)driver).executeScript(nameOfJavascriptMethod);
     }
@@ -154,11 +169,11 @@ public class BaseClass <T extends WebDriver> implements LogInOut, IBaseClass{
     }
 
     @Override
-    public Set<Cookie> getAllCookies() throws CookieUnavailableException {
-           Set<Cookie> cookieList = null;
+    public HashSet<Cookie> getAllCookies() throws CookieUnavailableException {
+           HashSet<Cookie> cookieList = null;
            try{
                cookieList = new HashSet<>();
-               cookieList = driver.manage().getCookies();
+               cookieList = (HashSet<Cookie>) driver.manage().getCookies();
            }
            catch (Exception ex){
                throw new CookieUnavailableException("Exception: For now it is impossible to get all cookies");
