@@ -122,6 +122,7 @@ public class BaseClass <T extends WebDriver> implements LogInOut, IBaseClass{
         else return false;
     }
 
+    // TODO : There found a bug during testing of AssertTrue method. Fix it
     @Override
     public <T> void AssertTrue(T value1, T value2) {
         Assert.assertTrue(value1 == value2,"Error: "+value1 +" != "+value2+". But they must be equal");

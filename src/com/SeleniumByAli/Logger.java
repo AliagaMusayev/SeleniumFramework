@@ -1,26 +1,36 @@
 package com.SeleniumByAli;
 
+import com.SeleniumByAli.CustomExceptions.LoggingException;
+
 import java.io.*;
 
 public class Logger {
 
-    public void WriteErrorLog(String logMessage) throws IOException {
-        File errorFile = new File(System.getProperty("user.dir")+"\\ErrorLogs.txt");
-        if(!errorFile.exists()){
-            errorFile.createNewFile();
-        }
-        Writer writeToFile = null;
-        BufferedWriter writer = new BufferedWriter(writeToFile);
+    public synchronized void WriteErrorLog(String logMessage, String fullFilePathAndName) throws IOException {
         try{
-            writer.write(logMessage);
+            File errorFile = new File(fullFilePathAndName);
+            if(!errorFile.exists()){
+                errorFile.createNewFile();
+            }
+            FileWriter writeToFile = new FileWriter(errorFile,true);
+            BufferedWriter writer = new BufferedWriter(writeToFile);
+            try{
+                writer.write(logMessage);
+            }
+
+            finally {
+                writer.close();
+            }
+        }
+        catch (LoggingException ex){
+            throw new LoggingException("Exception on Writing Error Logs to file");
         }
 
-        finally {
-            writer.close();
-        }
     }
 
-    public void WriteInfoLog(String logMessage){
+    public void WriteInfoLog(String logMessage) throws LoggingException {
 
+        // TODO : write method logic
+        throw new LoggingException("During creation of Info Log file there happened error");
     }
 }
