@@ -53,8 +53,8 @@
       <file leaf-file-name="BaseClass.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/SeleniumByAli/BaseClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="463">
-              <caret line="211" column="52" lean-forward="true" selection-start-line="211" selection-start-column="47" selection-end-line="211" selection-end-column="52" />
+            <state relative-caret-position="3570">
+              <caret line="227" column="13" selection-start-line="227" selection-start-column="13" selection-end-line="227" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#6580#6581#0" expanded="true" />
@@ -63,6 +63,14 @@
                 <element signature="e#6608#6609#0" expanded="true" />
                 <element signature="e#6679#6680#0" expanded="true" />
                 <element signature="e#6744#6745#0" expanded="true" />
+                <element signature="e#6666#6667#0" expanded="true" />
+                <element signature="e#6688#6689#0" expanded="true" />
+                <element signature="e#6754#6755#0" expanded="true" />
+                <element signature="e#6808#6809#0" expanded="true" />
+                <element signature="e#6847#6848#0" expanded="true" />
+                <element signature="e#6897#6898#0" expanded="true" />
+                <element signature="e#6959#6960#0" expanded="true" />
+                <element signature="e#7014#7015#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -80,11 +88,8 @@
       <file leaf-file-name="IBaseClass.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/SeleniumByAli/IBaseClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="531">
-              <caret line="61" column="47" selection-start-line="61" selection-start-column="47" selection-end-line="61" selection-end-column="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-489">
+              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -118,12 +123,12 @@
         <option value="$PROJECT_DIR$/src/com/SeleniumByAli/CustomExceptions/LoggingException.java" />
         <option value="$PROJECT_DIR$/src/com/SeleniumByAli/Logger.java" />
         <option value="$PROJECT_DIR$/src/com/SeleniumByAli/CustomExceptions/CookieUnavailableException.java" />
-        <option value="$PROJECT_DIR$/src/com/SeleniumByAli/IBaseClass.java" />
         <option value="$PROJECT_DIR$/src/com/SeleniumByAli/BaseClass.java" />
+        <option value="$PROJECT_DIR$/src/com/SeleniumByAli/IBaseClass.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="1358" />
     <option name="y" value="-8" />
     <option name="width" value="1616" />
@@ -255,7 +260,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="1358" y="-8" width="1616" height="876" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -305,9 +310,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="33" column="49" lean-forward="true" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -323,6 +325,14 @@
             <element signature="e#6608#6609#0" expanded="true" />
             <element signature="e#6679#6680#0" expanded="true" />
             <element signature="e#6744#6745#0" expanded="true" />
+            <element signature="e#6666#6667#0" expanded="true" />
+            <element signature="e#6688#6689#0" expanded="true" />
+            <element signature="e#6754#6755#0" expanded="true" />
+            <element signature="e#6808#6809#0" expanded="true" />
+            <element signature="e#6847#6848#0" expanded="true" />
+            <element signature="e#6897#6898#0" expanded="true" />
+            <element signature="e#6959#6960#0" expanded="true" />
+            <element signature="e#7014#7015#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -339,6 +349,14 @@
             <element signature="e#6608#6609#0" expanded="true" />
             <element signature="e#6679#6680#0" expanded="true" />
             <element signature="e#6744#6745#0" expanded="true" />
+            <element signature="e#6666#6667#0" expanded="true" />
+            <element signature="e#6688#6689#0" expanded="true" />
+            <element signature="e#6754#6755#0" expanded="true" />
+            <element signature="e#6808#6809#0" expanded="true" />
+            <element signature="e#6847#6848#0" expanded="true" />
+            <element signature="e#6897#6898#0" expanded="true" />
+            <element signature="e#6959#6960#0" expanded="true" />
+            <element signature="e#7014#7015#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -392,6 +410,14 @@
             <element signature="e#6608#6609#0" expanded="true" />
             <element signature="e#6679#6680#0" expanded="true" />
             <element signature="e#6744#6745#0" expanded="true" />
+            <element signature="e#6666#6667#0" expanded="true" />
+            <element signature="e#6688#6689#0" expanded="true" />
+            <element signature="e#6754#6755#0" expanded="true" />
+            <element signature="e#6808#6809#0" expanded="true" />
+            <element signature="e#6847#6848#0" expanded="true" />
+            <element signature="e#6897#6898#0" expanded="true" />
+            <element signature="e#6959#6960#0" expanded="true" />
+            <element signature="e#7014#7015#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -452,6 +478,14 @@
             <element signature="e#6608#6609#0" expanded="true" />
             <element signature="e#6679#6680#0" expanded="true" />
             <element signature="e#6744#6745#0" expanded="true" />
+            <element signature="e#6666#6667#0" expanded="true" />
+            <element signature="e#6688#6689#0" expanded="true" />
+            <element signature="e#6754#6755#0" expanded="true" />
+            <element signature="e#6808#6809#0" expanded="true" />
+            <element signature="e#6847#6848#0" expanded="true" />
+            <element signature="e#6897#6898#0" expanded="true" />
+            <element signature="e#6959#6960#0" expanded="true" />
+            <element signature="e#7014#7015#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -674,18 +708,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/SeleniumByAli/IBaseClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="61" column="47" selection-start-line="61" selection-start-column="47" selection-end-line="61" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-489">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/SeleniumByAli/BaseClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="211" column="52" lean-forward="true" selection-start-line="211" selection-start-column="47" selection-end-line="211" selection-end-column="52" />
+        <state relative-caret-position="3570">
+          <caret line="227" column="13" selection-start-line="227" selection-start-column="13" selection-end-line="227" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#6580#6581#0" expanded="true" />
@@ -694,6 +725,14 @@
             <element signature="e#6608#6609#0" expanded="true" />
             <element signature="e#6679#6680#0" expanded="true" />
             <element signature="e#6744#6745#0" expanded="true" />
+            <element signature="e#6666#6667#0" expanded="true" />
+            <element signature="e#6688#6689#0" expanded="true" />
+            <element signature="e#6754#6755#0" expanded="true" />
+            <element signature="e#6808#6809#0" expanded="true" />
+            <element signature="e#6847#6848#0" expanded="true" />
+            <element signature="e#6897#6898#0" expanded="true" />
+            <element signature="e#6959#6960#0" expanded="true" />
+            <element signature="e#7014#7015#0" expanded="true" />
           </folding>
         </state>
       </provider>

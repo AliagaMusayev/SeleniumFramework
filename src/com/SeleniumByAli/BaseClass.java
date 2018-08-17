@@ -1,10 +1,7 @@
 package com.SeleniumByAli;
 
 import com.SeleniumByAli.CustomExceptions.CookieUnavailableException;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Cookie;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -211,6 +208,26 @@ public class BaseClass <T extends WebDriver> implements LogInOut, IBaseClass{
     @Override
     public String GetSelectedWindowByIndex(int index) {
         return driver.getWindowHandles().toArray()[index].toString();
+    }
+
+    @Override
+    public void AcceptAlert(){
+         driver.switchTo().alert().accept();
+    }
+
+    @Override
+    public void DismissAlert(){
+           driver.switchTo().alert().dismiss();
+    }
+
+    @Override
+    public String GetTextAlert(){
+           return driver.switchTo().alert().getText();
+    }
+
+    @Override
+    public void SendKeysToAlert(String text){
+           driver.switchTo().alert().sendKeys(text);
     }
 }
 

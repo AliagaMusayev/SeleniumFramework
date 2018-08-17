@@ -7,6 +7,7 @@ import org.openqa.selenium.Cookie;
 import java.util.Set;
 
 public interface IBaseClass extends LogInOut {
+
     void gotoURL(String url);
 
     void FocusOn(String window);
@@ -60,4 +61,12 @@ public interface IBaseClass extends LogInOut {
     Set<String> GetAllWindows();
 
     String GetSelectedWindowByIndex(int index);
+
+    void AcceptAlert();
+
+    void DismissAlert();
+
+    String GetTextAlert();
+
+    void SendKeysToAlert(String text);
 }
