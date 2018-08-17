@@ -10,7 +10,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-
 import java.util.HashSet;
 import java.util.Set;
 
@@ -20,7 +19,7 @@ public class BaseClass <T extends WebDriver> implements LogInOut, IBaseClass{
 
     // NOTE: Either you can use Base Class methods, or you can implement IBaseClass and write method's body as you think
       protected static WebDriver _driver;
-      EventFiringWebDriver driver = null;
+      EventFiringWebDriver driver;
       WebDriverListener listener = new WebDriverListener();
 
        public BaseClass(T typeOfBrowser){
@@ -170,9 +169,8 @@ public class BaseClass <T extends WebDriver> implements LogInOut, IBaseClass{
 
     @Override
     public HashSet<Cookie> getAllCookies() throws CookieUnavailableException {
-           HashSet<Cookie> cookieList = null;
+           HashSet<Cookie> cookieList;
            try{
-               cookieList = new HashSet<>();
                cookieList = (HashSet<Cookie>) driver.manage().getCookies();
            }
            catch (Exception ex){
@@ -190,6 +188,29 @@ public class BaseClass <T extends WebDriver> implements LogInOut, IBaseClass{
     public void addCookie(Cookie name)
     {
         driver.manage().addCookie(name);
+    }
+
+    @Override
+    public boolean IsElementPresent(By locator) {
+               int countOfElement = driver.findElements(locator).size();
+               if (countOfElement>0) {
+                   return true;
+               } else { return false; }
+    }
+
+    @Override
+    public void ResetDriverOptionsToDefault() {
+        driver.switchTo().defaultContent();
+    }
+
+    @Override
+    public Set<String> GetAllWindows() {
+        return driver.getWindowHandles();
+    }
+
+    @Override
+    public String GetSelectedWindowByIndex(int index) {
+        return driver.getWindowHandles().toArray()[index].toString();
     }
 }
 

@@ -52,4 +52,12 @@ public interface IBaseClass extends LogInOut {
     Cookie getCookie(String name);
 
     void addCookie(Cookie name);
+
+    boolean IsElementPresent(By locator);
+
+    void ResetDriverOptionsToDefault();
+
+    Set<String> GetAllWindows();
+
+    String GetSelectedWindowByIndex(int index);
 }
