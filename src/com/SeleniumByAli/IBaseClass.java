@@ -80,5 +80,5 @@ public interface IBaseClass extends LogInOut {
 
     void ResizeElement(WebElement target, int xOffset, int yOffset);
 
-    void SetAcceptUntrustedCertificatesOnFirefox(FirefoxOptions option, FirefoxProfile profile, WebDriver driver);
+    void SetAcceptUntrustedCertificatesOnFirefox(FirefoxOptions option, FirefoxProfile profile, WebDriver driver, boolean accept);
 }

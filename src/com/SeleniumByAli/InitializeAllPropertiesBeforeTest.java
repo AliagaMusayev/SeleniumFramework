@@ -59,9 +59,9 @@ public class InitializeAllPropertiesBeforeTest <T extends WebDriver> extends Bas
      * @param typeOfBrowser this is instance of one BrowserType driver. Example: FirefoxDriver, ChromeDriver etc
      * @param browserNameAndPathToBrowserSettings this parameter is HashMap<String, String> will be used for to define path to geckodriver or chromedriver or iexplorerdriver
      */
-    public  InitializeAllPropertiesBeforeTest(T typeOfBrowser, HashMap<String, String> browserNameAndPathToBrowserSettings) throws Exception {
+    public  InitializeAllPropertiesBeforeTest(T typeOfBrowser, HashMap<String, String> browserNameAndPathToBrowserSettings, boolean acceptUntrustedCertificates) throws Exception {
 
-        super(typeOfBrowser);
+        super(typeOfBrowser, acceptUntrustedCertificates);
 
         if(typeOfBrowser instanceof FirefoxDriver){
             // path for gecko driver will be taken from settings.xml file

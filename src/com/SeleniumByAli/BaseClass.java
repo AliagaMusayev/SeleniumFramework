@@ -26,10 +26,10 @@ public class BaseClass <T extends WebDriver> implements LogInOut, IBaseClass{
       FirefoxOptions options;
       FirefoxProfile profile;
 
-       public BaseClass(T typeOfBrowser){
+       public BaseClass(T typeOfBrowser, boolean acceptUntrustedCertificates){
 
            if(typeOfBrowser instanceof FirefoxDriver){
-               SetAcceptUntrustedCertificatesOnFirefox(options, profile, _driver);
+               SetAcceptUntrustedCertificatesOnFirefox(options, profile, _driver, acceptUntrustedCertificates);
            }
            else{
                this._driver = typeOfBrowser;
@@ -261,11 +261,11 @@ public class BaseClass <T extends WebDriver> implements LogInOut, IBaseClass{
     }
 
     @Override
-    public void SetAcceptUntrustedCertificatesOnFirefox(FirefoxOptions option, FirefoxProfile profile, WebDriver driver) {
+    public void SetAcceptUntrustedCertificatesOnFirefox(FirefoxOptions option, FirefoxProfile profile, WebDriver driver, boolean accept) {
         option = new FirefoxOptions();
         profile = new FirefoxProfile();
-        profile.setAcceptUntrustedCertificates(true);
-        profile.setAssumeUntrustedCertificateIssuer(false);
+        profile.setAcceptUntrustedCertificates(accept);
+        profile.setAssumeUntrustedCertificateIssuer(accept);
         option.setProfile(profile);
         driver = new FirefoxDriver(option);
     }
