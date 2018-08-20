@@ -3,6 +3,10 @@ package com.SeleniumByAli;
 import com.SeleniumByAli.CustomExceptions.CookieUnavailableException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Cookie;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.firefox.FirefoxProfile;
 
 import java.util.Set;
 
@@ -69,4 +73,12 @@ public interface IBaseClass extends LogInOut {
     String GetTextAlert();
 
     void SendKeysToAlert(String text);
+
+    void DragElement(WebElement target, WebElement destination);
+
+    void SlideElement(WebElement target, int xOffset, int yOffset);
+
+    void ResizeElement(WebElement target, int xOffset, int yOffset);
+
+    void SetAcceptUntrustedCertificatesOnFirefox(FirefoxOptions option, FirefoxProfile profile, WebDriver driver);
 }

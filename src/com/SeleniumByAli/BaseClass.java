@@ -2,6 +2,10 @@ package com.SeleniumByAli;
 
 import com.SeleniumByAli.CustomExceptions.CookieUnavailableException;
 import org.openqa.selenium.*;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.firefox.FirefoxProfile;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -18,11 +22,22 @@ public class BaseClass <T extends WebDriver> implements LogInOut, IBaseClass{
       protected static WebDriver _driver;
       EventFiringWebDriver driver;
       WebDriverListener listener = new WebDriverListener();
+      Actions myActions;
+      FirefoxOptions options;
+      FirefoxProfile profile;
 
        public BaseClass(T typeOfBrowser){
-           this._driver = typeOfBrowser;
+
+           if(typeOfBrowser instanceof FirefoxDriver){
+               SetAcceptUntrustedCertificatesOnFirefox(options, profile, _driver);
+           }
+           else{
+               this._driver = typeOfBrowser;
+           }
+
            driver = new EventFiringWebDriver(_driver);
            driver.register(listener);
+           myActions = new Actions(driver);
        }
 
 
@@ -228,6 +243,31 @@ public class BaseClass <T extends WebDriver> implements LogInOut, IBaseClass{
     @Override
     public void SendKeysToAlert(String text){
            driver.switchTo().alert().sendKeys(text);
+    }
+
+    @Override
+    public void DragElement(WebElement target, WebElement destination) {
+        myActions.dragAndDrop(target,destination);
+    }
+
+    @Override
+    public void SlideElement(WebElement target, int xOffset, int yOffset) {
+        myActions.dragAndDropBy(target,xOffset,yOffset);
+    }
+
+    @Override
+    public void ResizeElement(WebElement target, int xOffset, int yOffset) {
+        myActions.dragAndDropBy(target,xOffset,yOffset);
+    }
+
+    @Override
+    public void SetAcceptUntrustedCertificatesOnFirefox(FirefoxOptions option, FirefoxProfile profile, WebDriver driver) {
+        option = new FirefoxOptions();
+        profile = new FirefoxProfile();
+        profile.setAcceptUntrustedCertificates(true);
+        profile.setAssumeUntrustedCertificateIssuer(false);
+        option.setProfile(profile);
+        driver = new FirefoxDriver(option);
     }
 }
 
