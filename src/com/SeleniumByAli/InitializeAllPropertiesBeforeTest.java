@@ -59,7 +59,7 @@ public class InitializeAllPropertiesBeforeTest <T extends WebDriver> extends Bas
      * @param typeOfBrowser this is instance of one BrowserType driver. Example: FirefoxDriver, ChromeDriver etc
      * @param browserNameAndPathToBrowserSettings this parameter is HashMap<String, String> will be used for to define path to geckodriver or chromedriver or iexplorerdriver
      */
-    public  InitializeAllPropertiesBeforeTest(T typeOfBrowser, HashMap<String, String> browserNameAndPathToBrowserSettings, boolean acceptUntrustedCertificates) throws Exception {
+    public  InitializeAllPropertiesBeforeTest(T typeOfBrowser, HashMap<String, String> browserNameAndPathToBrowserSettings, boolean acceptUntrustedCertificates, long pageLoadTimeout) throws Exception {
 
         super(typeOfBrowser, acceptUntrustedCertificates);
 
@@ -80,7 +80,9 @@ public class InitializeAllPropertiesBeforeTest <T extends WebDriver> extends Bas
             throw new NoSuchTypeBrowserException("Please select true browser type and then Re-run tests");
         }
 
-
+        //There will be set maximum timeout seconds for all web pages on project. IT is better not to wait for a long time if there is
+        // a problem on page loading process
+        setPAGE_LOAD_TIMEOUT(pageLoadTimeout);
     }
 
     public ArrayList<String> returnBrowserInstanceSettings() throws IOException, SAXException, ParserConfigurationException {

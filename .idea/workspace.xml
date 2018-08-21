@@ -10,15 +10,45 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="SeleniumWebDriverFramework" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="WebDriverListener.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/SeleniumByAli/WebDriverListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
+            <state relative-caret-position="-374">
               <caret line="8" column="58" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#beforeAlertAccept#0;class#WebDriverListener#0" />
+                <element signature="method#afterAlertAccept#0;class#WebDriverListener#0" />
+                <element signature="method#afterAlertDismiss#0;class#WebDriverListener#0" />
+                <element signature="method#beforeAlertDismiss#0;class#WebDriverListener#0" />
+                <element signature="method#beforeNavigateTo#0;class#WebDriverListener#0" />
+                <element signature="method#afterNavigateTo#0;class#WebDriverListener#0" />
+                <element signature="method#beforeNavigateBack#0;class#WebDriverListener#0" />
+                <element signature="method#afterNavigateBack#0;class#WebDriverListener#0" />
+                <element signature="method#beforeNavigateForward#0;class#WebDriverListener#0" />
+                <element signature="method#afterNavigateForward#0;class#WebDriverListener#0" />
+                <element signature="method#beforeNavigateRefresh#0;class#WebDriverListener#0" />
+                <element signature="method#afterNavigateRefresh#0;class#WebDriverListener#0" />
+                <element signature="method#beforeFindBy#0;class#WebDriverListener#0" />
+                <element signature="method#afterFindBy#0;class#WebDriverListener#0" />
+                <element signature="method#beforeClickOn#0;class#WebDriverListener#0" />
+                <element signature="method#afterClickOn#0;class#WebDriverListener#0" />
+                <element signature="method#beforeChangeValueOf#0;class#WebDriverListener#0" />
+                <element signature="method#afterChangeValueOf#0;class#WebDriverListener#0" />
+                <element signature="method#beforeScript#0;class#WebDriverListener#0" />
+                <element signature="method#afterScript#0;class#WebDriverListener#0" />
+                <element signature="method#afterSwitchToWindow#0;class#WebDriverListener#0" />
+                <element signature="method#beforeSwitchToWindow#0;class#WebDriverListener#0" />
+                <element signature="method#onException#0;class#WebDriverListener#0" />
+                <element signature="method#beforeGetScreenshotAs#0;class#WebDriverListener#0" />
+                <element signature="method#afterGetScreenshotAs#0;class#WebDriverListener#0" />
+                <element signature="method#beforeGetText#0;class#WebDriverListener#0" />
+                <element signature="method#afterGetText#0;class#WebDriverListener#0" />
               </folding>
             </state>
           </provider>
@@ -27,11 +57,14 @@
       <file leaf-file-name="InitializeAllPropertiesBeforeTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/SeleniumByAli/InitializeAllPropertiesBeforeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
-              <caret line="63" column="56" selection-start-line="63" selection-start-column="56" selection-end-line="63" selection-end-column="56" />
+            <state relative-caret-position="463">
+              <caret line="61" column="200" selection-start-line="61" selection-start-column="200" selection-end-line="61" selection-end-column="200" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#947#987#0" />
+                <element signature="method#InitializeAllPropertiesBeforeTest#0;class#InitializeAllPropertiesBeforeTest#0" />
+                <element signature="method#returnBrowserInstanceSettings#0;class#InitializeAllPropertiesBeforeTest#0" />
+                <element signature="method#checkIfSettingsFileExists#0;class#InitializeAllPropertiesBeforeTest#0" />
               </folding>
             </state>
           </provider>
@@ -40,41 +73,49 @@
       <file leaf-file-name="BaseClass.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/SeleniumByAli/BaseClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="548">
-              <caret line="263" column="55" selection-start-line="263" selection-start-column="16" selection-end-line="263" selection-end-column="55" />
+            <state relative-caret-position="289">
+              <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
               <folding>
-                <element signature="method#BaseClass#0;class#BaseClass#0" />
-                <element signature="method#Login#0;class#BaseClass#0" />
-                <element signature="method#FocusOn#1;class#BaseClass#0" />
-                <element signature="method#waitWhileElementVisible#0;class#BaseClass#0" />
-                <element signature="method#waitWhileElementClickable#0;class#BaseClass#0" />
-                <element signature="method#waitWhileWebPageCompletelyReady#0;class#BaseClass#0" />
-                <element signature="method#selectValueFromDropdownByText#0;class#BaseClass#0" />
-                <element signature="method#selectValueFromDropdownByValue#0;class#BaseClass#0" />
-                <element signature="method#selectValueFromDropdownByIndex#0;class#BaseClass#0" />
-                <element signature="method#SendKeysInSelectedTextField#0;class#BaseClass#0" />
-                <element signature="method#ClickNeededCheckbox#0;class#BaseClass#0" />
-                <element signature="method#ClickNeededRadioButton#0;class#BaseClass#0" />
-                <element signature="method#executeJavascript#0;class#BaseClass#0" />
-                <element signature="method#AssertResult#0;class#BaseClass#0" />
-                <element signature="method#AssertTrue#0;class#BaseClass#0" />
-                <element signature="method#AssertFalse#0;class#BaseClass#0" />
-                <element signature="method#DeleteCookie#0;class#BaseClass#0" />
-                <element signature="method#getAllCookies#0;class#BaseClass#0" />
-                <element signature="method#IsElementPresent#0;class#BaseClass#0" />
-                <element signature="method#SlideElement#0;class#BaseClass#0" />
-                <element signature="method#ResizeElement#0;class#BaseClass#0" />
-                <element signature="method#SetAcceptUntruestedCertificatesOnFirefox#0;class#BaseClass#0" />
+                <element signature="e#1032#1056#0" />
+                <element signature="e#1349#1370#0" />
+                <element signature="e#1219#1693#0" />
+                <element signature="e#1964#1992#0" />
+                <element signature="e#2094#2127#0" />
+                <element signature="e#1701#2180#0" />
+                <element signature="e#2232#2233#0" expanded="true" />
+                <element signature="e#2284#2285#0" expanded="true" />
+                <element signature="e#2291#2423#0" />
+                <element signature="e#2429#2676#0" />
+                <element signature="e#3129#3153#0" />
+                <element signature="e#2785#2943#0" />
+                <element signature="e#3003#3004#0" expanded="true" />
+                <element signature="e#3052#3053#0" expanded="true" />
+                <element signature="e#3551#3581#0" />
+                <element signature="e#3059#3288#0" />
+                <element signature="e#3294#3513#0" />
+                <element signature="e#4335#4375#0" />
+                <element signature="e#3792#4010#0" />
+                <element signature="e#4016#4231#0" />
+                <element signature="e#4560#5032#0" />
+                <element signature="e#5642#5676#0" />
+                <element signature="e#5038#5192#0" />
+                <element signature="e#5198#5355#0" />
+                <element signature="e#5361#5518#0" />
+                <element signature="e#6183#6209#0" />
+                <element signature="e#5524#5678#0" />
+                <element signature="e#5684#5932#0" />
+                <element signature="e#6828#6857#0" />
+                <element signature="e#6224#6417#0" />
+                <element signature="e#6423#6845#0" />
+                <element signature="e#7075#7324#0" />
+                <element signature="e#8199#8220#0" />
+                <element signature="e#8492#8507#0" />
+                <element signature="e#8056#8057#0" expanded="true" />
+                <element signature="e#8115#8116#0" expanded="true" />
+                <element signature="e#8956#9000#0" />
+                <element signature="e#8267#8415#0" />
+                <element signature="e#8576#9006#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IBaseClass.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/SeleniumByAli/IBaseClass.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="531">
-              <caret line="82" column="128" selection-start-line="82" selection-start-column="128" selection-end-line="82" selection-end-column="128" />
             </state>
           </provider>
         </entry>
@@ -124,6 +165,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -146,7 +188,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="Course" />
       <pane id="AndroidView" />
@@ -238,16 +279,16 @@
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50064266" side_tool="true" weight="0.32867134" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32867134" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4979021" visible="true" weight="0.25321338" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
+      <window_info id="Favorites" order="2" sideWeight="0.5020979" side_tool="true" visible="true" weight="0.25321338" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -265,80 +306,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/SeleniumByAli/BaseClass.java</url>
-          <line>30</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/SeleniumByAli/BaseClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1734">
-          <caret line="117" column="21" selection-start-line="117" selection-start-column="21" selection-end-line="117" selection-end-column="21" />
-          <folding>
-            <element signature="method#BaseClass#0;class#BaseClass#0" />
-            <element signature="method#Login#0;class#BaseClass#0" />
-            <element signature="method#FocusOn#1;class#BaseClass#0" />
-            <element signature="method#waitWhileElementVisible#0;class#BaseClass#0" />
-            <element signature="method#waitWhileElementClickable#0;class#BaseClass#0" />
-            <element signature="method#waitWhileWebPageCompletelyReady#0;class#BaseClass#0" />
-            <element signature="method#selectValueFromDropdownByText#0;class#BaseClass#0" />
-            <element signature="method#selectValueFromDropdownByValue#0;class#BaseClass#0" />
-            <element signature="method#selectValueFromDropdownByIndex#0;class#BaseClass#0" />
-            <element signature="method#SendKeysInSelectedTextField#0;class#BaseClass#0" />
-            <element signature="method#ClickNeededCheckbox#0;class#BaseClass#0" />
-            <element signature="method#ClickNeededRadioButton#0;class#BaseClass#0" />
-            <element signature="method#executeJavascript#0;class#BaseClass#0" />
-            <element signature="method#AssertResult#0;class#BaseClass#0" />
-            <element signature="method#AssertTrue#0;class#BaseClass#0" />
-            <element signature="method#AssertFalse#0;class#BaseClass#0" />
-            <element signature="method#DeleteCookie#0;class#BaseClass#0" />
-            <element signature="method#getAllCookies#0;class#BaseClass#0" />
-            <element signature="method#IsElementPresent#0;class#BaseClass#0" />
-            <element signature="method#SlideElement#0;class#BaseClass#0" />
-            <element signature="method#ResizeElement#0;class#BaseClass#0" />
-            <element signature="method#SetAcceptUntruestedCertificatesOnFirefox#0;class#BaseClass#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/SeleniumByAli/BaseClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1581">
-          <caret line="93" column="10" selection-start-line="93" selection-start-column="10" selection-end-line="93" selection-end-column="10" />
-          <folding>
-            <element signature="method#BaseClass#0;class#BaseClass#0" />
-            <element signature="method#Login#0;class#BaseClass#0" />
-            <element signature="method#FocusOn#1;class#BaseClass#0" />
-            <element signature="method#waitWhileElementVisible#0;class#BaseClass#0" />
-            <element signature="method#waitWhileElementClickable#0;class#BaseClass#0" />
-            <element signature="method#waitWhileWebPageCompletelyReady#0;class#BaseClass#0" />
-            <element signature="method#selectValueFromDropdownByText#0;class#BaseClass#0" />
-            <element signature="method#selectValueFromDropdownByValue#0;class#BaseClass#0" />
-            <element signature="method#selectValueFromDropdownByIndex#0;class#BaseClass#0" />
-            <element signature="method#SendKeysInSelectedTextField#0;class#BaseClass#0" />
-            <element signature="method#ClickNeededCheckbox#0;class#BaseClass#0" />
-            <element signature="method#ClickNeededRadioButton#0;class#BaseClass#0" />
-            <element signature="method#executeJavascript#0;class#BaseClass#0" />
-            <element signature="method#AssertResult#0;class#BaseClass#0" />
-            <element signature="method#AssertTrue#0;class#BaseClass#0" />
-            <element signature="method#AssertFalse#0;class#BaseClass#0" />
-            <element signature="method#DeleteCookie#0;class#BaseClass#0" />
-            <element signature="method#getAllCookies#0;class#BaseClass#0" />
-            <element signature="method#IsElementPresent#0;class#BaseClass#0" />
-            <element signature="method#SlideElement#0;class#BaseClass#0" />
-            <element signature="method#ResizeElement#0;class#BaseClass#0" />
-            <element signature="method#SetAcceptUntruestedCertificatesOnFirefox#0;class#BaseClass#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/SeleniumByAli/CustomExceptions/NoSuchTypeBrowserException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -357,6 +328,9 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#947#987#0" />
+            <element signature="method#InitializeAllPropertiesBeforeTest#0;class#InitializeAllPropertiesBeforeTest#0" />
+            <element signature="method#returnBrowserInstanceSettings#0;class#InitializeAllPropertiesBeforeTest#0" />
+            <element signature="method#checkIfSettingsFileExists#0;class#InitializeAllPropertiesBeforeTest#0" />
           </folding>
         </state>
       </provider>
@@ -381,28 +355,45 @@
         <state relative-caret-position="833">
           <caret line="49" column="70" selection-start-line="49" selection-start-column="55" selection-end-line="49" selection-end-column="70" />
           <folding>
-            <element signature="method#BaseClass#0;class#BaseClass#0" />
-            <element signature="method#Login#0;class#BaseClass#0" />
-            <element signature="method#FocusOn#1;class#BaseClass#0" />
-            <element signature="method#waitWhileElementVisible#0;class#BaseClass#0" />
-            <element signature="method#waitWhileElementClickable#0;class#BaseClass#0" />
-            <element signature="method#waitWhileWebPageCompletelyReady#0;class#BaseClass#0" />
-            <element signature="method#selectValueFromDropdownByText#0;class#BaseClass#0" />
-            <element signature="method#selectValueFromDropdownByValue#0;class#BaseClass#0" />
-            <element signature="method#selectValueFromDropdownByIndex#0;class#BaseClass#0" />
-            <element signature="method#SendKeysInSelectedTextField#0;class#BaseClass#0" />
-            <element signature="method#ClickNeededCheckbox#0;class#BaseClass#0" />
-            <element signature="method#ClickNeededRadioButton#0;class#BaseClass#0" />
-            <element signature="method#executeJavascript#0;class#BaseClass#0" />
-            <element signature="method#AssertResult#0;class#BaseClass#0" />
-            <element signature="method#AssertTrue#0;class#BaseClass#0" />
-            <element signature="method#AssertFalse#0;class#BaseClass#0" />
-            <element signature="method#DeleteCookie#0;class#BaseClass#0" />
-            <element signature="method#getAllCookies#0;class#BaseClass#0" />
-            <element signature="method#IsElementPresent#0;class#BaseClass#0" />
-            <element signature="method#SlideElement#0;class#BaseClass#0" />
-            <element signature="method#ResizeElement#0;class#BaseClass#0" />
-            <element signature="method#SetAcceptUntruestedCertificatesOnFirefox#0;class#BaseClass#0" />
+            <element signature="e#1032#1056#0" />
+            <element signature="e#1349#1370#0" />
+            <element signature="e#1219#1693#0" />
+            <element signature="e#1964#1992#0" />
+            <element signature="e#2094#2127#0" />
+            <element signature="e#1701#2180#0" />
+            <element signature="e#2232#2233#0" expanded="true" />
+            <element signature="e#2284#2285#0" expanded="true" />
+            <element signature="e#2291#2423#0" />
+            <element signature="e#2429#2676#0" />
+            <element signature="e#3129#3153#0" />
+            <element signature="e#2785#2943#0" />
+            <element signature="e#3003#3004#0" expanded="true" />
+            <element signature="e#3052#3053#0" expanded="true" />
+            <element signature="e#3551#3581#0" />
+            <element signature="e#3059#3288#0" />
+            <element signature="e#3294#3513#0" />
+            <element signature="e#4335#4375#0" />
+            <element signature="e#3792#4010#0" />
+            <element signature="e#4016#4231#0" />
+            <element signature="e#4560#5032#0" />
+            <element signature="e#5642#5676#0" />
+            <element signature="e#5038#5192#0" />
+            <element signature="e#5198#5355#0" />
+            <element signature="e#5361#5518#0" />
+            <element signature="e#6183#6209#0" />
+            <element signature="e#5524#5678#0" />
+            <element signature="e#5684#5932#0" />
+            <element signature="e#6828#6857#0" />
+            <element signature="e#6224#6417#0" />
+            <element signature="e#6423#6845#0" />
+            <element signature="e#7075#7324#0" />
+            <element signature="e#8199#8220#0" />
+            <element signature="e#8492#8507#0" />
+            <element signature="e#8056#8057#0" expanded="true" />
+            <element signature="e#8115#8116#0" expanded="true" />
+            <element signature="e#8956#9000#0" />
+            <element signature="e#8267#8415#0" />
+            <element signature="e#8576#9006#0" />
           </folding>
         </state>
       </provider>
@@ -428,6 +419,9 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#947#987#0" />
+            <element signature="method#InitializeAllPropertiesBeforeTest#0;class#InitializeAllPropertiesBeforeTest#0" />
+            <element signature="method#returnBrowserInstanceSettings#0;class#InitializeAllPropertiesBeforeTest#0" />
+            <element signature="method#checkIfSettingsFileExists#0;class#InitializeAllPropertiesBeforeTest#0" />
           </folding>
         </state>
       </provider>
@@ -456,28 +450,45 @@
         <state relative-caret-position="85">
           <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
           <folding>
-            <element signature="method#BaseClass#0;class#BaseClass#0" />
-            <element signature="method#Login#0;class#BaseClass#0" />
-            <element signature="method#FocusOn#1;class#BaseClass#0" />
-            <element signature="method#waitWhileElementVisible#0;class#BaseClass#0" />
-            <element signature="method#waitWhileElementClickable#0;class#BaseClass#0" />
-            <element signature="method#waitWhileWebPageCompletelyReady#0;class#BaseClass#0" />
-            <element signature="method#selectValueFromDropdownByText#0;class#BaseClass#0" />
-            <element signature="method#selectValueFromDropdownByValue#0;class#BaseClass#0" />
-            <element signature="method#selectValueFromDropdownByIndex#0;class#BaseClass#0" />
-            <element signature="method#SendKeysInSelectedTextField#0;class#BaseClass#0" />
-            <element signature="method#ClickNeededCheckbox#0;class#BaseClass#0" />
-            <element signature="method#ClickNeededRadioButton#0;class#BaseClass#0" />
-            <element signature="method#executeJavascript#0;class#BaseClass#0" />
-            <element signature="method#AssertResult#0;class#BaseClass#0" />
-            <element signature="method#AssertTrue#0;class#BaseClass#0" />
-            <element signature="method#AssertFalse#0;class#BaseClass#0" />
-            <element signature="method#DeleteCookie#0;class#BaseClass#0" />
-            <element signature="method#getAllCookies#0;class#BaseClass#0" />
-            <element signature="method#IsElementPresent#0;class#BaseClass#0" />
-            <element signature="method#SlideElement#0;class#BaseClass#0" />
-            <element signature="method#ResizeElement#0;class#BaseClass#0" />
-            <element signature="method#SetAcceptUntruestedCertificatesOnFirefox#0;class#BaseClass#0" />
+            <element signature="e#1032#1056#0" />
+            <element signature="e#1349#1370#0" />
+            <element signature="e#1219#1693#0" />
+            <element signature="e#1964#1992#0" />
+            <element signature="e#2094#2127#0" />
+            <element signature="e#1701#2180#0" />
+            <element signature="e#2232#2233#0" expanded="true" />
+            <element signature="e#2284#2285#0" expanded="true" />
+            <element signature="e#2291#2423#0" />
+            <element signature="e#2429#2676#0" />
+            <element signature="e#3129#3153#0" />
+            <element signature="e#2785#2943#0" />
+            <element signature="e#3003#3004#0" expanded="true" />
+            <element signature="e#3052#3053#0" expanded="true" />
+            <element signature="e#3551#3581#0" />
+            <element signature="e#3059#3288#0" />
+            <element signature="e#3294#3513#0" />
+            <element signature="e#4335#4375#0" />
+            <element signature="e#3792#4010#0" />
+            <element signature="e#4016#4231#0" />
+            <element signature="e#4560#5032#0" />
+            <element signature="e#5642#5676#0" />
+            <element signature="e#5038#5192#0" />
+            <element signature="e#5198#5355#0" />
+            <element signature="e#5361#5518#0" />
+            <element signature="e#6183#6209#0" />
+            <element signature="e#5524#5678#0" />
+            <element signature="e#5684#5932#0" />
+            <element signature="e#6828#6857#0" />
+            <element signature="e#6224#6417#0" />
+            <element signature="e#6423#6845#0" />
+            <element signature="e#7075#7324#0" />
+            <element signature="e#8199#8220#0" />
+            <element signature="e#8492#8507#0" />
+            <element signature="e#8056#8057#0" expanded="true" />
+            <element signature="e#8115#8116#0" expanded="true" />
+            <element signature="e#8956#9000#0" />
+            <element signature="e#8267#8415#0" />
+            <element signature="e#8576#9006#0" />
           </folding>
         </state>
       </provider>
@@ -652,13 +663,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/Udemy/client-combined-3.13.0-sources.jar!/org/openqa/selenium/WebDriver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="353" column="14" selection-start-line="353" selection-start-column="14" selection-end-line="353" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/SeleniumByAli/CustomExceptions/NoSuchTypeBrowserException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -691,13 +695,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/SeleniumByAli/WebDriverListener.java">
+    <entry file="jar://D:/Udemy/client-combined-3.13.0-sources.jar!/org/openqa/selenium/net/UrlChecker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="8" column="58" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-880">
+          <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_92/src.zip!/java/net/URL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-841">
+          <caret line="437" column="11" selection-start-line="437" selection-start-column="11" selection-end-line="437" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Udemy/client-combined-3.13.0-sources.jar!/org/openqa/selenium/WebDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="296" column="13" selection-start-line="296" selection-start-column="13" selection-end-line="296" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -708,44 +723,101 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/SeleniumByAli/WebDriverListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-374">
+          <caret line="8" column="58" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#beforeAlertAccept#0;class#WebDriverListener#0" />
+            <element signature="method#afterAlertAccept#0;class#WebDriverListener#0" />
+            <element signature="method#afterAlertDismiss#0;class#WebDriverListener#0" />
+            <element signature="method#beforeAlertDismiss#0;class#WebDriverListener#0" />
+            <element signature="method#beforeNavigateTo#0;class#WebDriverListener#0" />
+            <element signature="method#afterNavigateTo#0;class#WebDriverListener#0" />
+            <element signature="method#beforeNavigateBack#0;class#WebDriverListener#0" />
+            <element signature="method#afterNavigateBack#0;class#WebDriverListener#0" />
+            <element signature="method#beforeNavigateForward#0;class#WebDriverListener#0" />
+            <element signature="method#afterNavigateForward#0;class#WebDriverListener#0" />
+            <element signature="method#beforeNavigateRefresh#0;class#WebDriverListener#0" />
+            <element signature="method#afterNavigateRefresh#0;class#WebDriverListener#0" />
+            <element signature="method#beforeFindBy#0;class#WebDriverListener#0" />
+            <element signature="method#afterFindBy#0;class#WebDriverListener#0" />
+            <element signature="method#beforeClickOn#0;class#WebDriverListener#0" />
+            <element signature="method#afterClickOn#0;class#WebDriverListener#0" />
+            <element signature="method#beforeChangeValueOf#0;class#WebDriverListener#0" />
+            <element signature="method#afterChangeValueOf#0;class#WebDriverListener#0" />
+            <element signature="method#beforeScript#0;class#WebDriverListener#0" />
+            <element signature="method#afterScript#0;class#WebDriverListener#0" />
+            <element signature="method#afterSwitchToWindow#0;class#WebDriverListener#0" />
+            <element signature="method#beforeSwitchToWindow#0;class#WebDriverListener#0" />
+            <element signature="method#onException#0;class#WebDriverListener#0" />
+            <element signature="method#beforeGetScreenshotAs#0;class#WebDriverListener#0" />
+            <element signature="method#afterGetScreenshotAs#0;class#WebDriverListener#0" />
+            <element signature="method#beforeGetText#0;class#WebDriverListener#0" />
+            <element signature="method#afterGetText#0;class#WebDriverListener#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/SeleniumByAli/InitializeAllPropertiesBeforeTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="63" column="56" selection-start-line="63" selection-start-column="56" selection-end-line="63" selection-end-column="56" />
+        <state relative-caret-position="463">
+          <caret line="61" column="200" selection-start-line="61" selection-start-column="200" selection-end-line="61" selection-end-column="200" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#947#987#0" />
+            <element signature="method#InitializeAllPropertiesBeforeTest#0;class#InitializeAllPropertiesBeforeTest#0" />
+            <element signature="method#returnBrowserInstanceSettings#0;class#InitializeAllPropertiesBeforeTest#0" />
+            <element signature="method#checkIfSettingsFileExists#0;class#InitializeAllPropertiesBeforeTest#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/SeleniumByAli/BaseClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
-          <caret line="263" column="55" selection-start-line="263" selection-start-column="16" selection-end-line="263" selection-end-column="55" />
+        <state relative-caret-position="289">
+          <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
           <folding>
-            <element signature="method#BaseClass#0;class#BaseClass#0" />
-            <element signature="method#Login#0;class#BaseClass#0" />
-            <element signature="method#FocusOn#1;class#BaseClass#0" />
-            <element signature="method#waitWhileElementVisible#0;class#BaseClass#0" />
-            <element signature="method#waitWhileElementClickable#0;class#BaseClass#0" />
-            <element signature="method#waitWhileWebPageCompletelyReady#0;class#BaseClass#0" />
-            <element signature="method#selectValueFromDropdownByText#0;class#BaseClass#0" />
-            <element signature="method#selectValueFromDropdownByValue#0;class#BaseClass#0" />
-            <element signature="method#selectValueFromDropdownByIndex#0;class#BaseClass#0" />
-            <element signature="method#SendKeysInSelectedTextField#0;class#BaseClass#0" />
-            <element signature="method#ClickNeededCheckbox#0;class#BaseClass#0" />
-            <element signature="method#ClickNeededRadioButton#0;class#BaseClass#0" />
-            <element signature="method#executeJavascript#0;class#BaseClass#0" />
-            <element signature="method#AssertResult#0;class#BaseClass#0" />
-            <element signature="method#AssertTrue#0;class#BaseClass#0" />
-            <element signature="method#AssertFalse#0;class#BaseClass#0" />
-            <element signature="method#DeleteCookie#0;class#BaseClass#0" />
-            <element signature="method#getAllCookies#0;class#BaseClass#0" />
-            <element signature="method#IsElementPresent#0;class#BaseClass#0" />
-            <element signature="method#SlideElement#0;class#BaseClass#0" />
-            <element signature="method#ResizeElement#0;class#BaseClass#0" />
-            <element signature="method#SetAcceptUntruestedCertificatesOnFirefox#0;class#BaseClass#0" />
+            <element signature="e#1032#1056#0" />
+            <element signature="e#1349#1370#0" />
+            <element signature="e#1219#1693#0" />
+            <element signature="e#1964#1992#0" />
+            <element signature="e#2094#2127#0" />
+            <element signature="e#1701#2180#0" />
+            <element signature="e#2232#2233#0" expanded="true" />
+            <element signature="e#2284#2285#0" expanded="true" />
+            <element signature="e#2291#2423#0" />
+            <element signature="e#2429#2676#0" />
+            <element signature="e#3129#3153#0" />
+            <element signature="e#2785#2943#0" />
+            <element signature="e#3003#3004#0" expanded="true" />
+            <element signature="e#3052#3053#0" expanded="true" />
+            <element signature="e#3551#3581#0" />
+            <element signature="e#3059#3288#0" />
+            <element signature="e#3294#3513#0" />
+            <element signature="e#4335#4375#0" />
+            <element signature="e#3792#4010#0" />
+            <element signature="e#4016#4231#0" />
+            <element signature="e#4560#5032#0" />
+            <element signature="e#5642#5676#0" />
+            <element signature="e#5038#5192#0" />
+            <element signature="e#5198#5355#0" />
+            <element signature="e#5361#5518#0" />
+            <element signature="e#6183#6209#0" />
+            <element signature="e#5524#5678#0" />
+            <element signature="e#5684#5932#0" />
+            <element signature="e#6828#6857#0" />
+            <element signature="e#6224#6417#0" />
+            <element signature="e#6423#6845#0" />
+            <element signature="e#7075#7324#0" />
+            <element signature="e#8199#8220#0" />
+            <element signature="e#8492#8507#0" />
+            <element signature="e#8056#8057#0" expanded="true" />
+            <element signature="e#8115#8116#0" expanded="true" />
+            <element signature="e#8956#9000#0" />
+            <element signature="e#8267#8415#0" />
+            <element signature="e#8576#9006#0" />
           </folding>
         </state>
       </provider>
