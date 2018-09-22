@@ -1,6 +1,7 @@
 package com.SeleniumByAli;
 
 import com.SeleniumByAli.CustomExceptions.CookieUnavailableException;
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
@@ -13,6 +14,8 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import java.io.File;
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -327,6 +330,12 @@ public class BaseClass <T extends WebDriver> implements LogInOut, IBaseClass{
         profile.setAssumeUntrustedCertificateIssuer(accept);
         option.setProfile(profile);
         driver = new FirefoxDriver(option);
+    }
+
+    @Override
+    public void TakeScreenshot(String fullFilePathWithName) throws IOException {
+        File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+        FileUtils.copyFileToDirectory(scrFile, new File(fullFilePathWithName), true);
     }
 }
 

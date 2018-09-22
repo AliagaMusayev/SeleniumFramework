@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
 
+import java.io.IOException;
 import java.util.Set;
 
 public interface IBaseClass extends LogInOut {
@@ -81,4 +82,6 @@ public interface IBaseClass extends LogInOut {
     void ResizeElement(WebElement target, int xOffset, int yOffset);
 
     void SetAcceptUntrustedCertificatesOnFirefox(FirefoxOptions option, FirefoxProfile profile, WebDriver driver, boolean accept);
+
+    void TakeScreenshot(String fullFilePathWithName) throws IOException;
 }
