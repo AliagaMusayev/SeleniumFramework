@@ -1,0 +1,32 @@
+# To execute this docker-compose yml file use `docker-compose -f <file_name> up`
+# Add the `-d` flag at the end for detached execution
+version: '2'
+services:
+  firefox:
+    image: selenium/node-firefox:3.14.0-gallium
+    volumes:
+      - C:\Selenium
+    depends_on:
+      - hub
+    environment:
+      NODE_MAX_INSTANCES: 3
+      NODE_MAX_SESSION: 3
+      HUB_HOST: hub
+    
+  chrome:
+    image: selenium/node-chrome:3.14.0-gallium
+    volumes:
+      - C:\Selenium
+    depends_on:
+      - hub
+    environment:
+      NODE_MAX_INSTANCES: 3
+      NODE_MAX_SESSION: 3
+      HUB_HOST: hub
+
+  hub:
+    image: selenium/hub:3.14.0-gallium
+    ports:
+      - "4444:4444"
+    environment:
+      GRID_MAX_SESSION: 10
